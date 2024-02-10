@@ -26,7 +26,7 @@ const slides = [
 const Carousal = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToSlide = useCallback((index) => {
+  const goToSlide = useCallback((index: React.SetStateAction<number>) => {
     setCurrentIndex(index);
   }, []);
 
