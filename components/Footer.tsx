@@ -11,7 +11,7 @@ const Footer = () => {
       </MaxWidthWrapper>
       <div className="border-t m-4 border-[#3C3F44] py-6 text-xs md:text-sm font-semibold">
         <MaxWidthWrapper className="text-[#ADB1B8] md:flex gap-6 m-4 break-words space-y-4 ">
-          <p className="text-[#7D828A]">Made with ❤️</p>
+          <p className="text-[#7D828A] md:flex items-end">Made with ❤️</p>
           <ul className=" list-disc flex space-x-8">
             <li>Privacy policy</li>
             <li>Terms of usage</li>
