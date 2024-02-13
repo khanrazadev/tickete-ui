@@ -52,8 +52,8 @@ const FaQ = () => {
       <div className="md:order-2 col-span-2">
         <Accordion type="single" collapsible>
           {fAQ.map((data) => (
-            <div className="py-2">
-              <AccordionItem value={data.id}>
+            <div className="py-2" key={data.id}>
+              <AccordionItem value={data.title}>
                 <AccordionTrigger>
                   <p className="md:font-semibold md:text-lg text-xs">
                     {data.title}

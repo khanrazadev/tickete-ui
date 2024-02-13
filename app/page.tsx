@@ -1,9 +1,11 @@
+"use client";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { HiInformationCircle } from "react-icons/hi";
 
 import Sidebar from "@/components/Sidebar";
 import FaQ from "@/components/FaQ";
 import Payment from "@/components/Payment";
+import { Input } from "../node_modules/@material-tailwind/react";
 
 export default function Home() {
   return (

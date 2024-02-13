@@ -1,3 +1,4 @@
+"use client";
 import { CiCreditCard1 } from "react-icons/ci";
 import { FaApplePay, FaGooglePay } from "react-icons/fa";
 import {
@@ -8,6 +9,7 @@ import { PiPiggyBankFill, PiLockFill } from "react-icons/pi";
 import { Icons } from "./Icons";
 import Input from "./custom-ui/input";
 import { Button } from "./ui/button";
+import { Option, Select } from "../node_modules/@material-tailwind/react";
 
 const Payment = () => {
   return (
@@ -24,7 +26,22 @@ const Payment = () => {
         <Input title="Full name" />
 
         <div className="md:flex md:gap-4 space-y-4 md:space-y-0">
-          <Input title="Country code" />
+          <Select
+            //@ts-ignore
+            label={
+              <>
+                {"Country code"}
+                <p className="text-red-500 ml-[1px]">*</p>
+              </>
+            }
+          >
+            <Option>India</Option>
+            <Option>USA</Option>
+            <Option>China</Option>
+            <Option>Canada</Option>
+            <Option>Dubai</Option>
+          </Select>
+
           <Input title="Phone number" />
         </div>
 
@@ -47,9 +64,37 @@ const Payment = () => {
       <div className="mt-2 flex flex-col gap-2 space-y-4">
         <div className="md:flex gap-4 space-y-4 md:space-y-0">
           <Input title="Input label" />
-          <Input title="Select" />
+          <Select
+            //@ts-ignore
+            label={
+              <>
+                {"Select"}
+                <p className="text-red-500 ml-[1px]">*</p>
+              </>
+            }
+          >
+            <Option>India</Option>
+            <Option>USA</Option>
+            <Option>China</Option>
+            <Option>Canada</Option>
+            <Option>Dubai</Option>
+          </Select>
         </div>
-        <Input title="Multiselect" />
+        <Select
+          //@ts-ignore
+          label={
+            <>
+              {"Multiselect"}
+              <p className="text-red-500 ml-[1px]">*</p>
+            </>
+          }
+        >
+          <Option>India</Option>
+          <Option>USA</Option>
+          <Option>China</Option>
+          <Option>Canada</Option>
+          <Option>Dubai</Option>
+        </Select>
         <hr />
       </div>
 
